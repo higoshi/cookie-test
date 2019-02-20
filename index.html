@@ -1,9 +1,6 @@
 <!doctype html>
-<body>
-<script>
-  document.write('navigator.cookieEnabled:' + navigator.cookieEnabled + '\n');
-
+<p><script>document.write('navigator.cookieEnabled:' + navigator.cookieEnabled);</script></p>
+<p><script>
   document.cookie = 'a=1'
-  if (document.cookie) document.write('writable\n');
-  else document.write('not writable\n');
-</script>
+  document.write(document.cookie ? 'writable' : 'not writable');
+</script></p>
